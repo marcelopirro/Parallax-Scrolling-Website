@@ -5,6 +5,7 @@
 :root{
     --azul-escuro: #2b1055;
     --azul-claro:  #7597de;
+    --azul-maisescuro: #1c0522;
     --branco: #fff;
 }
 
@@ -25,6 +26,7 @@
 body{
     min-height: 100vh;
     background:linear-gradient(var(--azul-escuro), var(--azul-claro));
+    overflow-x: hidden;
 }
 
 header{
@@ -76,6 +78,17 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, var(--azul-escuro), transparent);
+    z-index: 1000;
 }
 
 section img{
@@ -98,6 +111,7 @@ section img#mountains_front{
 
 #texto{
     position: absolute;
+    right: -350px;
     color:var(--branco);
     white-space: nowrap;
     font-size: 7.5vw;
@@ -114,4 +128,60 @@ section img#mountains_front{
     display: inline-block;
     z-index: 9;
     transform: translateY(100px);
+}
+
+.sec {
+    position: relative;
+    padding: 100px;
+    background: var(--azul-escuro);
+}
+
+.sec h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: var(--branco);
+    text-align: center;
+}
+
+.sec p{
+    font-size: 1em;
+    color: var(--branco);
+    text-align: justify;
+}
+
+body::-webkit-scrollbar {
+    width: 0.8em;
+    opacity: 1;
+}
+
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 100vw;
+  background-color: darkgray;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: gray;
+  }
+
+footer{
+    width: 100%;
+    height: 15em;
+    background-color: var(--azul-maisescuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#container{
+    background-color: bisque;
+    
+}
+
+.list{
+    background-color: #fff;
+    height: 5em;
+    width: 5em;
+    float: right;
+    margin: 10px;
 }
