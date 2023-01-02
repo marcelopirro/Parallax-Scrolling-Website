@@ -7,6 +7,6 @@ Attibuition: <a href="https://www.freepik.com/free-vector/mountains-cleft-view-f
 <img src="./images/exibition/02.png">
 
 Video:
-<video width="320" height="240" controls>
-    <source src=".images/exibition/ParallaxScrollingWebsite.mp4" type="video/mp4">
-</video>
+
+https://user-images.githubusercontent.com/79222545/210263684-3d1bc77d-7011-4e77-9368-2dc79e86fa91.mp4
+
